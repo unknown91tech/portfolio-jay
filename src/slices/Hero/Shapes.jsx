@@ -1,4 +1,3 @@
-"use client";
 
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
@@ -160,7 +159,7 @@ function Geometry({r , position , geometry , materials , soundEffects}){
     function handleClick(e){
       const mesh = e.object;
 
-      gsap.utils.random(soundEffects).play()
+      //gsap.utils.random(soundEffects).play()
       gsap.to(mesh.rotation,{
         x: `+=${gsap.utils.random(0, 2)}`,
         y: `+=${gsap.utils.random(0, 2)}`,
