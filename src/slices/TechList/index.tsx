@@ -10,6 +10,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Bounded from "@/components/Bounded";
 import Heading from "@/components/Heading";
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 /**
@@ -20,8 +21,10 @@ export type TechListProps = SliceComponentProps<Content.TechListSlice>;
 /**
  * Component for "TechList" Slices.
  */
+
 const TechList = ({ slice }: TechListProps): JSX.Element => {
   const component = useRef(null);
+
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -33,6 +36,7 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
           end: "bottom top",
           scrub: 11,
         },
+        
       });
 
       tl.fromTo(
@@ -50,7 +54,7 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
               ? gsap.utils.random(-600, -400)
               : gsap.utils.random(600, 400);
           },
-          //ease: "power1.inOut",
+          ease: "power1.inOut",
         },
       );
     }, component);
@@ -73,14 +77,14 @@ const TechList = ({ slice }: TechListProps): JSX.Element => {
       {slice.items.map(({ tech_color, tech_name }, index) => (
         <div
           key={index}
-          className="tech-row mb-8 flex items-center justify-center gap-2 text-neutral-700"
+          className=" tech-row mb-8 flex items-center justify-center gap-2 text-neutral-700"
           aria-label={tech_name || ""}
         >
           {Array.from({ length: 13 }, (_, index) => (
             <React.Fragment key={index}>
               <span
                 className={
-                  "tech-item text-7xl font-extrabold uppercase tracking-tighter"
+                  " tech-item text-7xl font-extrabold uppercase tracking-tighter"
                 }
                 
                 style={{

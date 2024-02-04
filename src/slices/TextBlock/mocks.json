@@ -1,0 +1,20 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Elit culpa qui aliquip dolore magna voluptate elit proident culpa mollit commodo. Quis dolore voluptate ex eiusmod tempor reprehenderit minim eu anim enim aliquip enim. Elit minim aute quis excepteur in cupidatat cillum amet velit reprehenderit laborum nostrud officia."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
