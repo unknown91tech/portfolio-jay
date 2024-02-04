@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import  Footer from "@/components/Footer";
 import clsx from "clsx";
 import { PrismicPreview } from "@prismicio/next";
-import { CreateClient, getRepositoryName } from "@prismicio/client";
+import { CreateClient, isRepositoryName } from "@prismicio/client";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
 
@@ -30,7 +30,7 @@ export default function RootLayout({
         <div className="absolute pointer-events-none inset-0 -z-40 h-full bg-[url('/noisetexture.jpg')] opacity-20 mix-blend-soft-light"></div>
 
       </body>
-      <PrismicPreview repositoryName={getRepositoryName}/>
+      {/* <PrismicPreview repositoryName={isRepositoryName}/> */}
     </html>
   );
 }
